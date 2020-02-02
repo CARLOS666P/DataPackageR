@@ -1,0 +1,37 @@
+---
+  title: "matchup"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{matchup}
+%\VignetteEngine{knitr::rmarkdown}
+%\VignetteEncoding{UTF-8}
+---
+
+  ```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+datfolder <- system.file("extdata", package = "matchup")
+file.copy(
+  file.path(datfolder, dir(datfolder)),
+  file.path(getwd(), dir(datfolder))
+)
+```
+
+This package comes with only one function. To demonstrate the use of these, the package comes do a match a turn back the values that coincidence:
+
+  ```{r}
+library(matchup)
+```
+
+1. `matchup` loads the vectors,read and compare then`
+
+```{r}
+(x <- matchup(x,y,dp=TRUE)
+```
+
+
+
+file.remove(dir(datfolder))
+rm(datfolder)
