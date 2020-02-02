@@ -1,0 +1,9 @@
+library(matchup)
+library(testthat)
+
+datfolder <- system.file("extdata", package = "matchup")
+setwd(datfolder)
+
+test_that("Raw files are available", {
+  expect_equal(length(dir()), 3)
+})
