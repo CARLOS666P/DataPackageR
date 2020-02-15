@@ -1,0 +1,24 @@
+Package: fars
+Title: Plot Accidental Injuries
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Leena",
+           family = "raj",
+           role = c("aut", "cre"),
+           email = "lraj.24@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Plot Fatality Analysis Reporting System (FARS) data
+Depends: R (>= 3.1.0)
+License: GPL(>=2)
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Imports:
+   dplyr,
+   maps,
+   readr,
+   tidyr,
+   magrittr
+Suggests: 
+    knitr,
+    testthat (>= 2.1.0)
+VignetteBuilder: knitr
