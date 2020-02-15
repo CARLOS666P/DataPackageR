@@ -1,0 +1,64 @@
+---
+title: "fars_read_vignette"
+author: "Leena"
+date: "09/02/2020"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{fars_Read}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Styles
+## Load Packages
+
+```{r}
+library(fars)
+library(maps)
+```
+
+## Included data
+
+Data files included within the package are:
+
+```{r}
+list.files(system.file("extdata", package = "fars"))
+```
+
+
+#'fars_read_years:Load accidents by Year & Month.
+#'
+#'
+#'Extract the month from the years arg passed to function.
+#'And check if file exists for those months.
+#'If it doesnt exist throw warning "invalid year".
+#'
+#'Ancillary function used by \code{fars_summarize_years}
+#'
+#'@param years a vector with list of years
+#'@return dataframe with MONTH and year columns
+#'
+#'@example
+#'\dontrun
+#'```{r far_read_year_ex}
+#'  
+#'    years <- c(2013,2015)
+#'    fars_read_years(years)
+#'`
+## Including Plots
+You can also embed plots, for example:
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+© 2020 GitHub, Inc.
