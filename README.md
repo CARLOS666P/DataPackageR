@@ -1,6 +1,8 @@
 # DataPackageR
 An R package
 
+[![Build Status](https://travis-ci.com/CARLOS666P/DataPackageR.svg?branch=master)](https://travis-ci.com/CARLOS666P/DataPackageR)
+
 https://travis-ci.com/CARLOS666P/DataPackageR.svg?branch=master
 
 https://travis-ci.com/CARLOS666P/DataPackageR
